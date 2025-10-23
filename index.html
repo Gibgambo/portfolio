@@ -1,109 +1,353 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Softwareentwickler</title>
-    <link rel="stylesheet" href="./static/css/stlye.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
+
+    <link rel="stylesheet" href="static/css/stlye.css">
 </head>
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">DEV.Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#projekte">Projekte</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Hallo, ich bin Jeffrey Plückhahn</h1>
-            <p>Softwareentwickler mit Leidenschaft für innovative Lösungen</p>
-            <a href="#projekte" class="cta-button">Meine Projekte ansehen</a>
+<body class="bg-slate-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 nav-dark shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div
+                    class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                    &lt;Dev/&gt;
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-indigo-400 transition font-medium">Home</a>
+                    <a href="#lebenslauf"
+                        class="text-gray-300 hover:text-indigo-400 transition font-medium">Lebenslauf</a>
+                    <a href="#projekte" class="text-gray-300 hover:text-indigo-400 transition font-medium">Projekte</a>
+                    <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition font-medium">Skills</a>
+                    <a href="#kontakt" class="text-gray-300 hover:text-indigo-400 transition font-medium">Kontakt</a>
+                </div>
+                <button class="md:hidden text-gray-300" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 gradient-bg min-h-screen flex items-center relative overflow-hidden">
+        <!-- Hintergrund-Animation -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div
+                class="absolute -top-1/2 -right-1/2 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse">
+            </div>
+            <div
+                class="absolute -bottom-1/2 -left-1/2 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000">
+            </div>
+        </div>
+
+        <!-- Inhalt -->
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <!-- Text -->
+            <div class="text-center md:text-left text-white flex-1">
+                <div
+                    class="inline-block mb-4 px-4 py-2 bg-white/10 rounded-full text-sm font-medium backdrop-blur-sm animate-fade-in border border-white/20">
+                    👋 Willkommen in meinem Portfolio
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
+                    Hallo, ich bin<br>
+                    <span
+                        class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        Jeffrey Plückhahn
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl animate-fade-in-up">
+                    Full-Stack Developer und IT Hobby-Enthusiast
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up">
+                    <a href="#projekte"
+                        class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-semibold hover:scale-105 transition shadow-lg hover:shadow-indigo-500/50">
+                        Projekte ansehen
+                    </a>
+                    <a href="#kontakt"
+                        class="px-8 py-4 bg-transparent border-2 border-indigo-400 text-indigo-400 rounded-full font-semibold hover:bg-indigo-400 hover:text-white transition">
+                        Kontakt aufnehmen
+                    </a>
+                </div>
+            </div>
+
+            <!-- Foto -->
+            <div class="flex-1 flex justify-center md:justify-end">
+                <img src="static/img/bewerbungsfoto.jpg" alt="Jeffrey Plückhahn"
+                    class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-indigo-500 shadow-2xl hover:scale-105 transition duration-300">
+            </div>
+        </div>
+
+        <!-- Scroll-Pfeil -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
         </div>
     </section>
 
-    <section id="projekte" class="section">
-        <div class="container">
-            <h2 class="section-title">Meine Projekte</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">🚀</div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">Eine vollständige E-Commerce-Lösung mit Warenkorb, Zahlungsintegration und Admin-Dashboard.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
+    <!-- Lebenslauf Section -->
+    <section id="lebenslauf" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 text-gray-300">
+            <h2 class="text-4xl md:text-5xl font-bold mb-10 text-center text-white">
+                Mein Lebenslauf
+            </h2>
+
+            <!-- Über mich -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Über mich</h3>
+                <p class="text-gray-400 leading-relaxed max-w-3xl">
+                    Meine Begeisterung für die IT begleitet mich seit meiner Jugend. Meine ersten Programme schrieb ich
+                    bereits mit 14 Jahren.
+                    Durch mein begonnenes Informatikstudium erhielt ich fundierte Einblicke in die Informatik.
+                    In meiner Ausbildung zum Fachinformatiker für Anwendungsentwicklung habe ich umfassende Kenntnisse
+                    in Softwareentwicklung,
+                    modernen Technologien und agilen Prozessen gesammelt.
+                    Als Handballspieler und Trainer habe ich Teamfähigkeit, Zuverlässigkeit und soziale Kompetenz
+                    gelernt.
+                    Ich arbeite ruhig, strukturiert und lösungsorientiert und freue mich immer auf neue
+                    Herausforderungen.
+                </p>
+            </div>
+
+            <!-- Ausbildung -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Ausbildung</h3>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-white font-medium">Berufs­förderungswerk Hamburg <span class="text-gray-400">|
+                                2023–2025</span></p>
+                        <p class="text-gray-400 text-sm">Ausbildung zum Fachinformatiker – Anwendungsentwicklung</p>
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Technische Universität Hamburg-Harburg <span
+                                class="text-gray-400">| 2013–2017</span></p>
+                        <p class="text-gray-400 text-sm">Computational Informatics (B.Sc., ohne Abschluss)</p>
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Universität Hamburg <span class="text-gray-400">|
+                                2010–2012</span></p>
+                        <p class="text-gray-400 text-sm">Chemie (B.Sc., ohne Abschluss)</p>
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Gymnasium Meckelfeld <span class="text-gray-400">|
+                                2001–2010</span></p>
+                        <p class="text-gray-400 text-sm">Abitur</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Erfahrung -->
+            <div>
+                <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Berufserfahrung</h3>
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-white font-medium">Bergwerk.io <span class="text-gray-400">| 2025–Heute</span>
+                        </p>
+                        <p class="text-gray-400 text-sm">Softwareentwickler</p>
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Bergwerk.io <span class="text-gray-400">| 2024</span></p>
+                        <p class="text-gray-400 text-sm">
+                            6-monatiges Praktikum in der Anwendungsentwicklung (React, Java, Python, GO, Elixir, Docker,
+                            Kubernetes)
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Hipsydruck <span class="text-gray-400">| 2020–2022</span></p>
+                        <p class="text-gray-400 text-sm">
+                            Technischer Produktionsassistent – Planung, Maschinenbedienung, Qualitätsprüfung
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Freundeskreis Ochsenzoll <span class="text-gray-400">|
+                                2018–2019</span></p>
+                        <p class="text-gray-400 text-sm">Medizinisch-Berufliche Rehabilitation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Neuer Abschnitt für Studentenjobs -->
+            <div class="mt-10">
+                <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Studentenjobs</h3>
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-white font-medium">Deutsche Post AG <span class="text-gray-400">| 2014-2016</span></p>
+                        <p class="text-gray-400 text-sm">
+                            Produktionshilfe – Qualitätskontrolle, Sortierung, Nachbearbeitung
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Stadtreinigung Hamburg <span class="text-gray-400">|
+                                2011-2013</span></p>
+                        <p class="text-gray-400 text-sm">
+                            Studentische Hilfskraft auf einem Recyclinghof – Sortierung und fachgerechte Entsorgung von
+                            Wertstoffen
+                        </p>
+                    </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projekte" class="py-20 bg-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+                    Meine Projekte
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Eine Auswahl meiner neuesten Arbeiten und Projekte
+                </p>
+                <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <!-- Project Card: Spotify Webplayer -->
+                <div
+                    class="project-card bg-slate-700/50 rounded-2xl shadow-2xl hover:shadow-green-500/20 overflow-hidden group backdrop-blur-sm border border-slate-600/50">
+                    <div class="relative h-48 project-gradient-1 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl group-hover:scale-110 transition duration-300">🎧</div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Handball DJ Webplayer</h3>
+                        <p class="text-gray-400 mb-4">
+                            Ein moderner Musikplayer mit Spotify-Integration, der Playlists, Tracks und Favoriten über
+                            die Spotify API verwaltet.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="text-gray-300 font-semibold mb-2">Technologien:</h4>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li><span class="font-semibold text-indigo-400">Programmiersprache:</span> Java</li>
+                                <li><span class="font-semibold text-indigo-400">Framework:</span> Spring Boot</li>
+                                <li><span class="font-semibold text-indigo-400">Frontend:</span> HTML, CSS, JavaScript
+                                </li>
+                                <li><span class="font-semibold text-indigo-400">Build & Management:</span> Maven</li>
+                                <li><span class="font-semibold text-indigo-400">Deployment:</span> Docker, Render</li>
+                            </ul>
+                        </div>
+                        <a href="https://my-spotify-musicplayer.onrender.com" target="_blank"
+                            class="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full font-semibold transition shadow-lg hover:scale-105">
+                            🎵 Live ansehen
+                        </a>
+                        <p class="text-sm text-gray-500 mt-2">
+                            (Login: <span class="font-mono text-gray-400">jeff / 123456</span>)
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Project Card 2 -->
+                <div
+                    class="project-card bg-slate-700/50 rounded-2xl shadow-2xl hover:shadow-pink-500/20 overflow-hidden group backdrop-blur-sm border border-slate-600/50">
+                    <div class="relative h-48 project-gradient-2 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl group-hover:scale-110 transition duration-300">📱</div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Task Manager App</h3>
+                        <p class="text-gray-400 mb-4">
+                            Mobile App zur Verwaltung von Aufgaben mit Echtzeit-Synchronisation
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">React Native</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">Firebase</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">Redux</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">📱</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Task Manager App</h3>
-                        <p class="project-description">Mobile App zur Verwaltung von Aufgaben und Projekten mit Echtzeit-Synchronisation.</p>
-                        <div class="project-tags">
-                            <span class="tag">React Native</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Redux</span>
+                <!-- Project Card 3 -->
+                <div
+                    class="project-card bg-slate-700/50 rounded-2xl shadow-2xl hover:shadow-green-500/20 overflow-hidden group backdrop-blur-sm border border-slate-600/50">
+                    <div class="relative h-48 project-gradient-3 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl group-hover:scale-110 transition duration-300">🤖</div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">AI Chatbot</h3>
+                        <p class="text-gray-400 mb-4">
+                            Intelligenter Chatbot mit NLP für Kundenservice-Automatisierung
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">TensorFlow</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">FastAPI</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">🤖</div>
-                    <div class="project-content">
-                        <h3 class="project-title">AI Chatbot</h3>
-                        <p class="project-description">Intelligenter Chatbot mit Natural Language Processing für Kundenservice-Automatisierung.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">FastAPI</span>
+                <!-- Project Card 4 -->
+                <div
+                    class="project-card bg-slate-700/50 rounded-2xl shadow-2xl hover:shadow-blue-500/20 overflow-hidden group backdrop-blur-sm border border-slate-600/50">
+                    <div class="relative h-48 project-gradient-4 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl group-hover:scale-110 transition duration-300">📊</div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Analytics Dashboard</h3>
+                        <p class="text-gray-400 mb-4">
+                            Dashboard mit Echtzeit-Metriken und interaktiven Charts
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">Vue.js</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">D3.js</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">📊</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Analytics Dashboard</h3>
-                        <p class="project-description">Datenvisualisierungs-Dashboard mit Echtzeit-Metriken und interaktiven Charts.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">D3.js</span>
-                            <span class="tag">PostgreSQL</span>
+                <!-- Project Card 5 -->
+                <div
+                    class="project-card bg-slate-700/50 rounded-2xl shadow-2xl hover:shadow-red-500/20 overflow-hidden group backdrop-blur-sm border border-slate-600/50">
+                    <div class="relative h-48 project-gradient-5 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl group-hover:scale-110 transition duration-300">🎮</div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Browser Game</h3>
+                        <p class="text-gray-400 mb-4">
+                            Multiplayer-Browsergame mit WebSocket-Kommunikation
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">Canvas</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">Socket.io</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">🎮</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Browser Game</h3>
-                        <p class="project-description">Multiplayer-Browsergame mit WebSocket-Kommunikation und 2D-Grafik-Engine.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Canvas</span>
-                            <span class="tag">Socket.io</span>
-                        </div>
+                <!-- Project Card 6 -->
+                <div
+                    class="project-card bg-slate-700/50 rounded-2xl shadow-2xl hover:shadow-purple-500/20 overflow-hidden group backdrop-blur-sm border border-slate-600/50">
+                    <div class="relative h-48 project-gradient-6 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl group-hover:scale-110 transition duration-300">🔐</div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🔐</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Auth Service</h3>
-                        <p class="project-description">Sicherer Authentifizierungsservice mit JWT, OAuth2 und Multi-Factor-Authentication.</p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">Redis</span>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Auth Service</h3>
+                        <p class="text-gray-400 mb-4">
+                            Sicherer Service mit JWT, OAuth2 und Multi-Factor-Auth
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">Java</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">Spring Boot</span>
+                            <span class="tag-dark px-3 py-1 rounded-full text-sm font-medium">Redis</span>
                         </div>
                     </div>
                 </div>
@@ -111,60 +355,132 @@
         </div>
     </section>
 
-    <section id="skills" class="section" style="background: #f8f9fa;">
-        <div class="container">
-            <h2 class="section-title">Technologien & Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-icon">⚛️</div>
-                    <h3>React</h3>
+    <!-- Skills Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+                    Skills & Technologien
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Mein Tech-Stack, Tools & Kenntnisse aus Entwicklung und Praxis
+                </p>
+                <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Grid der Kategorien -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Programmiersprachen -->
+                <div
+                    class="p-6 rounded-2xl border border-slate-700 bg-slate-800/50 shadow-lg hover:shadow-indigo-500/20 transition group">
+                    <div class="text-4xl mb-4 text-indigo-400">💻</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Programmiersprachen</h3>
+                    <ul class="text-gray-400 space-y-1 text-sm">
+                        <li>Java, Kotlin</li>
+                        <li>Python, Golang</li>
+                        <li>C, C++, C#</li>
+                        <li>Elixir, Clojure</li>
+                    </ul>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon">📗</div>
-                    <h3>Node.js</h3>
+
+                <!-- Web & Frontend -->
+                <div
+                    class="p-6 rounded-2xl border border-slate-700 bg-slate-800/50 shadow-lg hover:shadow-pink-500/20 transition group">
+                    <div class="text-4xl mb-4 text-pink-400">🎨</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Web & Frontend</h3>
+                    <ul class="text-gray-400 space-y-1 text-sm">
+                        <li>HTML, CSS</li>
+                        <li>JSON, XML</li>
+                        <li>JavaScript, TypeScript, PHP</li>
+                        <li>React, Angular, Next.js</li>
+                        <li>Alpine.js, Tailwind CSS</li>
+                    </ul>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon">🐍</div>
-                    <h3>Python</h3>
+
+                <!-- Backend & Frameworks -->
+                <div
+                    class="p-6 rounded-2xl border border-slate-700 bg-slate-800/50 shadow-lg hover:shadow-green-500/20 transition group">
+                    <div class="text-4xl mb-4 text-green-400">⚙️</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Backend & Frameworks</h3>
+                    <ul class="text-gray-400 space-y-1 text-sm">
+                        <li>Spring Boot, .NET, Phoenix, Flask</li>
+                        <li>REST-APIs, SOAP-APIs, GraphQL, Websockets</li>
+                        <li>Auth: Basic Auth, OAuth 2, JWT Auth</li>
+                    </ul>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon">☕</div>
-                    <h3>Java</h3>
+
+                <!-- Cloud & Deployment -->
+                <div
+                    class="p-6 rounded-2xl border border-slate-700 bg-slate-800/50 shadow-lg hover:shadow-blue-500/20 transition group">
+                    <div class="text-4xl mb-4 text-blue-400">☁️</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cloud & Deployment</h3>
+                    <ul class="text-gray-400 space-y-1 text-sm">
+                        <li>Docker, AWS, Google Cloud, Azure</li>
+                        <li>Kubernetes, Git, Bitbucket, Argo CD, </li>
+                        <li>Microservices: AMI, DynamoDB, S3, RDS, Developer Tools </li>
+                    </ul>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon">🗄️</div>
-                    <h3>Databases</h3>
+
+                <!-- Datenbanken -->
+                <div
+                    class="p-6 rounded-2xl border border-slate-700 bg-slate-800/50 shadow-lg hover:shadow-yellow-500/20 transition group">
+                    <div class="text-4xl mb-4 text-yellow-400">🗄️</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Datenbanken</h3>
+                    <ul class="text-gray-400 space-y-1 text-sm">
+                        <li>MySQL, PostgreSQL, MariaDB, SQLite</li>
+                        <li>MongoDB, CouchDB</li>
+                        <li>SQL, NoSQL</li>
+                    </ul>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon">☁️</div>
-                    <h3>Cloud</h3>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">🔧</div>
-                    <h3>DevOps</h3>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">🎨</div>
-                    <h3>UI/UX</h3>
+
+                <!-- Weitere Kenntnisse -->
+                <div
+                    class="p-6 rounded-2xl border border-slate-700 bg-slate-800/50 shadow-lg hover:shadow-purple-500/20 transition group">
+                    <div class="text-4xl mb-4 text-purple-400">🌍</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Weitere Kenntnisse</h3>
+                    <ul class="text-gray-400 space-y-1 text-sm">
+                        <li>Linux, Windows 11, MacOS</li>
+                        <li>Englisch (C1), Spanisch (B1)</li>
+                        <li>Führerschein Klasse B</li>
+                        <li>Agile Methoden, Teamarbeit, Kommunikation</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="kontakt">
-        <div class="container">
-            <h2>Lass uns zusammenarbeiten!</h2>
-            <p>Kontaktiere mich für spannende Projekte</p>
-            <div class="social-links">
-                <a href="#" title="GitHub">📂</a>
-                <a href="#" title="LinkedIn">💼</a>
-                <a href="#" title="Email">✉️</a>
-                <a href="#" title="Twitter">🐦</a>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-20 footer-dark">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+                Lass uns zusammenarbeiten!
+            </h2>
+            <p class="text-xl text-gray-300 mb-10">
+                Hast du ein spannendes Projekt? Schreib mir eine Nachricht!
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-6 mb-10">
+                <a href="mailto:jeff.plueckhahn@gmail.com"
+                    class="flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-semibold hover:scale-105 transition shadow-lg glow-effect">
+                    <span class="text-2xl">✉️</span>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/gibgambo" target="_blank"
+                    class="flex items-center gap-2 px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white backdrop-blur-sm rounded-full font-semibold transition border border-slate-600">
+                    <span class="text-2xl">📂</span>
+                    <span>GitHub</span>
+                </a>
             </div>
-            <p style="margin-top: 2rem; opacity: 0.7;">© 2025 - Alle Rechte vorbehalten</p>
+
+            <div class="text-gray-500 text-sm">
+                © 2025 - Made with ❤️ by Jeffrey Plückhahn
+            </div>
         </div>
-    </footer>
+    </section>
 
     <script src="./static/js/main.js"></script>
 </body>
+
 </html>
