@@ -27,7 +27,8 @@
                         class="text-gray-300 hover:text-indigo-400 transition font-medium">Lebenslauf</a>
                     <a href="#projekte" class="text-gray-300 hover:text-indigo-400 transition font-medium">Projekte</a>
                     <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition font-medium">Skills</a>
-                    <a href="#documents" class="text-gray-300 hover:text-indigo-400 transition font-medium">Dokumente</a>
+                    <a href="#documents"
+                        class="text-gray-300 hover:text-indigo-400 transition font-medium">Dokumente</a>
                     <a href="#kontakt" class="text-gray-300 hover:text-indigo-400 transition font-medium">Kontakt</a>
 
                 </div>
@@ -102,9 +103,20 @@
     <!-- Lebenslauf Section -->
     <section id="lebenslauf" class="py-20 bg-slate-900 border-t border-slate-800">
         <div class="max-w-6xl mx-auto px-6 text-gray-300">
+
             <h2 class="text-4xl md:text-5xl font-bold mb-10 text-center text-white">
                 Mein Lebenslauf
             </h2>
+
+            <!-- Download-Kachel -->
+            <div class="max-w-sm mx-auto mb-16">
+                <a href="./static/documents/lebenslauf.pdf" download
+                    class="p-6 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-indigo-500 hover:bg-slate-800 transition shadow-lg block text-center">
+                    <div class="text-3xl mb-3 text-indigo-400">📄</div>
+                    <h3 class="text-lg font-semibold text-white">Lebenslauf</h3>
+                    <p class="text-gray-400 text-sm">PDF herunterladen</p>
+                </a>
+            </div>
 
             <!-- Über mich -->
             <div class="mb-16">
@@ -128,8 +140,8 @@
                 <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Ausbildung</h3>
                 <div class="space-y-4">
                     <div>
-                        <p class="text-white font-medium">Berufs­förderungswerk Hamburg <span class="text-gray-400">|
-                                Jan. 2023– Jan.2025</span></p>
+                        <p class="text-white font-medium">Berufsförderungswerk Hamburg <span class="text-gray-400">|
+                                Jan. 2023– Jan. 2025</span></p>
                         <p class="text-gray-400 text-sm">Ausbildung zum Fachinformatiker – Anwendungsentwicklung</p>
                     </div>
                     <div>
@@ -138,191 +150,456 @@
                         <p class="text-gray-400 text-sm">Computational Informatics (B.Sc., ohne Abschluss)</p>
                     </div>
                     <div>
-                        <p class="text-white font-medium">Universität Hamburg <span class="text-gray-400">|
-                                Oct. 2010– Oct. 2012</span></p>
+                        <p class="text-white font-medium">Universität Hamburg <span class="text-gray-400">| Oct. 2010–
+                                Oct. 2012</span></p>
                         <p class="text-gray-400 text-sm">Chemie (B.Sc., ohne Abschluss)</p>
                     </div>
                     <div>
-                        <p class="text-white font-medium">Gymnasium Meckelfeld <span class="text-gray-400">|
-                                2001–May 2010</span></p>
+                        <p class="text-white font-medium">Gymnasium Meckelfeld <span class="text-gray-400">| 2001–May
+                                2010</span></p>
                         <p class="text-gray-400 text-sm">Abitur</p>
                     </div>
                 </div>
             </div>
 
             <!-- Erfahrung -->
-            <div>
+            <div class="mb-16">
                 <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Berufserfahrung</h3>
                 <div class="space-y-6">
                     <div>
-                        <p class="text-white font-medium">Bergwerk.io <span class="text-gray-400">| Feb. 2025–Heute</span>
-                        </p>
+                        <p class="text-white font-medium">Bergwerk.io <span class="text-gray-400">| Feb.
+                                2025–Heute</span></p>
                         <p class="text-gray-400 text-sm">Softwareentwickler</p>
                     </div>
                     <div>
-                        <p class="text-white font-medium">Bergwerk.io <span class="text-gray-400">| Jan. 2024 - June 2024</span></p>
-                        <p class="text-gray-400 text-sm">
-                            6-monatiges Praktikum in der Anwendungsentwicklung (React, Java, Python, GO, Elixir, Docker,
-                            Kubernetes)
-                        </p>
+                        <p class="text-white font-medium">Bergwerk.io <span class="text-gray-400">| Jan. 2024 - June
+                                2024</span></p>
+                        <p class="text-gray-400 text-sm">6-monatiges Praktikum in der Anwendungsentwicklung</p>
                     </div>
                     <div>
-                        <p class="text-white font-medium">Hipsydruck <span class="text-gray-400">| March 2020– Dec. 2022</span></p>
-                        <p class="text-gray-400 text-sm">
-                            Technischer Produktionsassistent – Planung, Maschinenbedienung, Qualitätsprüfung
-                        </p>
+                        <p class="text-white font-medium">Hipsydruck <span class="text-gray-400">| March 2020– Dec.
+                                2022</span></p>
+                        <p class="text-gray-400 text-sm">Technischer Produktionsassistent – Planung, Maschinenbedienung,
+                            Qualitätsprüfung</p>
                     </div>
                     <div>
-                        <p class="text-white font-medium">Freundeskreis Ochsenzoll <span class="text-gray-400">|
-                                Feb. 2018– Dec. 2019</span></p>
+                        <p class="text-white font-medium">Freundeskreis Ochsenzoll <span class="text-gray-400">| Feb.
+                                2018– Dec. 2019</span></p>
                         <p class="text-gray-400 text-sm">Medizinisch-Berufliche Rehabilitation</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Neuer Abschnitt für Studentenjobs -->
-            <div class="mt-10">
+            <!-- Studentenjobs -->
+            <div class="mb-16">
                 <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Studentenjobs</h3>
                 <div class="space-y-6">
                     <div>
                         <p class="text-white font-medium">Deutsche Post AG <span class="text-gray-400">|
                                 2014-2016</span></p>
-                        <p class="text-gray-400 text-sm">
-                            Produktionshilfe – Qualitätskontrolle, Sortierung, Nachbearbeitung
-                        </p>
+                        <p class="text-gray-400 text-sm">Produktionshilfe – Qualitätskontrolle, Sortierung,
+                            Nachbearbeitung</p>
                     </div>
                     <div>
                         <p class="text-white font-medium">Stadtreinigung Hamburg <span class="text-gray-400">|
                                 2011-2013</span></p>
-                        <p class="text-gray-400 text-sm">
-                            Studentische Hilfskraft auf einem Recyclinghof – Sortierung und fachgerechte Entsorgung von
-                            Wertstoffen
-                        </p>
+                        <p class="text-gray-400 text-sm">Studentische Hilfskraft – Sortierung & fachgerechte Entsorgung
+                            von Wertstoffen</p>
                     </div>
-
                 </div>
             </div>
+
+            <!-- Hobbies mit Carousel -->
+            <div class="mt-20">
+                <h3 class="text-2xl font-semibold text-indigo-400 mb-6">Hobbies</h3>
+
+                <!-- Carousel Container (feste Höhe) -->
+                <div class="relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-xl h-[480px]"
+                    id="hobby-carousel">
+
+                    <!-- Slides (absolut positioniert, füllen Container) -->
+                    <img src="./static/img/handball1.JPG" alt="Handball 1"
+                        class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0"
+                        loading="lazy" />
+                    <img src="./static/img/handball3.jpg" alt="Handball 2"
+                        class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0"
+                        loading="lazy" />
+                    <img src="./static/img/hobby3.jpg" alt="Hobby 3"
+                        class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0"
+                        loading="lazy" />
+
+                    <!-- Optional: overlay-gradient (schöner Kontrast am unteren Rand für die Dots) -->
+                    <div
+                        class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent">
+                    </div>
+                </div>
+
+                <!-- Dots (wird vom JS gefüllt) -->
+                <div id="hobby-dots" class="mt-4 flex items-center justify-center gap-3"></div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projekte" class="py-24 bg-slate-800 border-t border-slate-700">
         <div class="max-w-5xl mx-auto px-6">
 
-            <div class="text-center mb-16">
+            <!-- Haupttitel -->
+            <div class="text-center mb-20">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">
                     Meine Projekte
                 </h2>
                 <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    Eine detailliertere Vorstellung meiner zwei wichtigsten Projekte
+                    Eine Auswahl meiner privaten und beruflichen Softwareprojekte
                 </p>
                 <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <!-- Handball DJ Webplayer -->
-            <div
-                class="project-card bg-slate-700/50 rounded-2xl shadow-2xl p-10 mb-12 border border-slate-600/50 hover:shadow-indigo-500/20 transition">
 
-                <h3 class="text-3xl font-bold mb-4 text-white">🎧 Handball DJ Webplayer</h3>
+            <!-- ================= PRIVATE PROJEKTE ================= -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-white mb-10 text-center">
+                    🧪 Private Projekte
+                </h3>
+
+                <!-- Handball DJ Webplayer -->
+                <div
+                    class="project-card bg-slate-700/50 rounded-2xl shadow-2xl p-10 mb-12 border border-slate-600/50 hover:shadow-indigo-500/20 transition">
+
+                    <h3 class="text-3xl font-bold mb-4 text-white">🎧 Handball DJ Webplayer</h3>
+
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Ein Webplayer für mein Handballteam, entwickelt, um Einlaufmusik, Tormusik, Strafzeiten oder
+                        Siebenmeter-Musik
+                        situationsabhängig auf dem Spielfeld abzuspielen. Das Herzstück des Projekts funktioniert
+                        zuverlässig, allerdings
+                        habe ich im Laufe der Zeit das Interesse an der Weiterentwicklung verloren.
+                        <br><br>
+                        Der Player nutzt die Spotify API für nahtloses Abspielen und ist auf <span
+                            class="font-semibold">render.com</span> gehostet.
+                    </p>
+
+                    <!-- Tech Icons -->
+                    <div class="flex flex-wrap gap-6 mb-6">
+                        <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                class="w-6 h-6">
+                            <span class="text-gray-300 text-sm">Java</span>
+                        </div>
+
+                        <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                                class="w-6 h-6">
+                            <span class="text-gray-300 text-sm">Spring Boot</span>
+                        </div>
+
+                        <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                class="w-6 h-6">
+                            <span class="text-gray-300 text-sm">Docker</span>
+                        </div>
+
+                        <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                class="w-6 h-6">
+                            <span class="text-gray-300 text-sm">HTML/CSS/JS</span>
+                        </div>
+                    </div>
+
+                    <a href="https://my-spotify-musicplayer.onrender.com" target="_blank"
+                        class="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full font-semibold transition shadow-lg hover:scale-105">
+                        🎵 Live ansehen
+                    </a>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        Login: <span class="font-mono text-gray-400">jeff / 123456</span>
+                    </p>
+                </div>
+
+
+                <!-- Handball Analytics Dashboard -->
+                <div
+                    class="project-card bg-slate-700/50 rounded-2xl shadow-2xl p-10 border border-slate-600/50 hover:shadow-indigo-500/20 transition">
+
+                    <h3 class="text-3xl font-bold mb-4 text-white">🤾 Handball Analytics Dashboard</h3>
+
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Ein interaktives Dashboard für mein Handballteam, um Spielergebnisse unserer Liga auszuwerten
+                        und anschaulich darzustellen.
+                        Der Workflow umfasst:
+                        <br><br>
+                        • Scraping der Spiel- und Ergebnisdaten von <span class="font-semibold">NuLiga</span><br>
+                        • Parsing von PDF-Daten in CSV-Format<br>
+                        • Analyse und Berechnung von Statistiken<br>
+                        • Visualisierung der Ergebnisse als Diagramme und Heatmaps<br><br>
+                        Alle Analysen werden in einem <span class="font-semibold">Streamlit Dashboard</span>
+                        zusammengeführt, das auch online gehostet ist. Ideal zur Trainingsplanung und Vorbereitung auf
+                        Spiele.
+                    </p>
+
+                    <!-- Tech Icons -->
+                    <div class="flex flex-wrap gap-6 mb-6">
+                        <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                class="w-6 h-6">
+                            <span class="text-gray-300 text-sm">Python</span>
+                        </div>
+
+                        <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                            <img src="https://streamlit.io/images/brand/streamlit-mark-color.png" class="w-6 h-6">
+                            <span class="text-gray-300 text-sm">Streamlit</span>
+                        </div>
+
+                        <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                                class="w-6 h-6">
+                            <span class="text-gray-300 text-sm">Pandas</span>
+                        </div>
+
+                        <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                            <img src="https://matplotlib.org/stable/_static/logo2.svg" class="w-6 h-6">
+                            <span class="text-gray-300 text-sm">Matplotlib</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <a href="https://gibgambo-handball-data-analyzer-srcdashboard-8jj3yi.streamlit.app/"
+                            target="_blank"
+                            class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition shadow-lg hover:scale-105">
+                            📊 Demo ansehen
+                        </a>
+
+                        <a href="https://github.com/gibgambo/handball-data-analyzer" target="_blank"
+                            class="inline-block px-6 py-3 bg-slate-600 hover:bg-slate-700 text-white rounded-full font-semibold transition shadow-lg">
+                            💻 Code ansehen
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ================= BERUFLICHE PROJEKTE ================= -->
+                <div class="mt-24">
+                    <h3 class="text-3xl font-bold text-white mb-10 text-center">
+                        💼 Berufliche Projekte
+                    </h3>
+
+                    <!-- Plastics.ai – Berufliches Projekt -->
+                    <div
+                        class="project-card bg-slate-700/30 rounded-2xl shadow-xl p-10 mb-12 border border-slate-600/40 hover:shadow-indigo-500/20 transition">
+
+                        <div class="flex items-center">
+                            <!-- Logo (klickbar) -->
+                            <a href="https://plastics.ai" target="_blank" class="block mb-6">
+                                <img src="static/img/plasticsAILogo.svg" alt="Plastics.ai Logo"
+                                    class="w-28 opacity-90 hover:opacity-100 transition">
+                            </a>
+
+
+                        </div>
+
+
+                        <p class="text-gray-400 text-sm mb-4 italic">
+                            Entwickelt bei: <span class="text-indigo-400 font-semibold">Bergwerk.io</span>
+                        </p>
+
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            Plastics.ai ist ein KI-gestützter Chatbot speziell für die Kunststoffindustrie.
+                            Durch die Integration der umfangreichen Fachliteratur des Hanser Verlags liefert das System
+                            präzise Antworten inklusive Quellen aus der Fachliteratur. Expert:innen nutzen die
+                            Plattform,
+                            um Materialien, Verfahren, Kennwerte und technische Details schneller zu recherchieren.
+                            <br><br>
+                            Meine Hauptverantwortung lag in der <span
+                                class="text-indigo-400 font-semibold">Backend-Entwicklung.</span>
+                            Datenverarbeitung, Aufbereitung der Hanser-Fachliteratur, API-Design, Authentifizierung,
+                            Authorisierung, Abonnementsystem,
+
+                            Dokument-Chunking sowie die Umsetzung performanter KI-Anfragen.
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            Anschließend unterstützte ich auch im <span
+                                class="text-indigo-400 font-semibold">Frontend</span>
+                            bei der Verbesserung der UI/UX, der Chatlogik und der Darstellung der KI-Ergebnisse.</p>
+                        </p>
+
+                        <!-- Tech Icons -->
+                        <div class="flex flex-wrap gap-6 mb-6">
+
+                            <!-- Elixir -->
+                            <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg"
+                                    class="w-6 h-6">
+                                <span class="text-gray-300 text-sm">Elixir (BE)</span>
+                            </div>
+
+                            <!-- PostgreSQL -->
+                            <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                    class="w-6 h-6">
+                                <span class="text-gray-300 text-sm">PostgreSQL</span>
+                            </div>
+
+                            <!-- React -->
+                            <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    class="w-6 h-6">
+                                <span class="text-gray-300 text-sm">React (FE)</span>
+                            </div>
+
+                            <!-- Docker -->
+                            <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                    class="w-6 h-6">
+                                <span class="text-gray-300 text-sm">Docker</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ZEIT ONLINE – Berufliches Projekt -->
+                    <div
+                        class="project-card bg-slate-700/30 rounded-2xl shadow-xl p-10 mb-12 border border-slate-600/40 hover:shadow-indigo-500/20 transition">
+
+                        <!-- Logo (klickbar) -->
+                        <a href="https://www.zeit.de" target="_blank" class="block mb-6">
+                            <img src="static/img/Logo_Zeit_Online_2017.svg.png" alt="ZEIT ONLINE Logo"
+                                class="w-32 opacity-90 hover:opacity-100 transition">
+                        </a>
+
+                        <h3 class="text-2xl font-bold mb-2 text-white">ZEIT Online — E-Pub Konverter</h3>
+                        <p class="text-gray-400 text-sm mb-4 italic">
+                            Auftrag für: <span class="text-indigo-400 font-semibold">ZEIT ONLINE</span>
+                        </p>
+
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            Für ZEIT ONLINE habe ich einen automatisierten E-Pub Konverter entwickelt, der redaktionelle
+                            Inhalte
+                            in das E-Book-Format umwandelt und für Kunden bzw. End-Nutzer bereitstellt. Ziel war eine
+                            robuste,
+                            skalierbare und reproduzierbare Pipeline für Veröffentlichungen.
+                            <br><br>
+                            Die Lösung kombiniert verschiedene Technologien: Im Backend benutzen wir <span
+                                class="text-indigo-400 font-semibold"> Clojure / Go / Python</span>,
+                            um Parsing, Metadaten-Verarbeitung, Formatkonvertierung und Automatisierung zu realisieren.
+                            Die Daten werden in einer <span
+                                class="text-indigo-400 font-semibold">PostgreSQL</span>-Datenbank verwaltet. Das
+                            Frontend war minimal — Schwerpunkt lag auf Stabilität und Effizienz. Für Containerisierung
+                            und Deployment nutzen wir <span class="text-indigo-400 font-semibold">Docker</span>.
+                            <br><br>
+                            Der Konverter erlaubt es, Inhalte effizient und konsistent aufzubereiten — von der
+                            Rohdatenverarbeitung bis hin zum finalen E-Book. Damit konnte ZEIT ONLINE die
+                            Ausgabe-Erstellung deutlich beschleunigen und standardisieren.
+                        </p>
+
+                        <!-- Tech Icons -->
+                        <div class="flex flex-wrap gap-6 mb-6">
+
+                            <!-- Clojure -->
+                            <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clojure/clojure-original.svg"
+                                    class="w-6 h-6" alt="Clojure">
+                                <span class="text-gray-300 text-sm">Clojure</span>
+                            </div>
+
+                            <!-- Go -->
+                            <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+                                    class="w-6 h-6" alt="Go">
+                                <span class="text-gray-300 text-sm">Go</span>
+                            </div>
+
+                            <!-- Python -->
+                            <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    class="w-6 h-6" alt="Python">
+                                <span class="text-gray-300 text-sm">Python</span>
+                            </div>
+
+                            <!-- PostgreSQL -->
+                            <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                    class="w-6 h-6" alt="PostgreSQL">
+                                <span class="text-gray-300 text-sm">PostgreSQL</span>
+                            </div>
+
+                            <!-- Docker -->
+                            <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                    class="w-6 h-6" alt="Docker">
+                                <span class="text-gray-300 text-sm">Docker</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BEMER Group – Website Projekt -->
+            <div
+                class="project-card bg-slate-700/30 rounded-2xl shadow-xl p-10 mb-12 border border-slate-600/40 hover:shadow-indigo-500/20 transition">
+
+                <div class="flex items-center">
+                    <!-- Logo (klickbar) -->
+                    <a href="https://plastics.ai" target="_blank" class="block mb-6">
+                        <img src="static/img/png-transparent-bemer-therapie-logo-bemer-therapy-horse-text-orange.png"
+                            alt="Bemer Log" class="w-28 opacity-90 hover:opacity-100 transition">
+                    </a>
+
+
+                </div>
+                <h3 class="text-2xl font-bold mb-2 text-white">BEMER Group – Website</h3>
+                <p class="text-gray-400 text-sm mb-4 italic">
+                    Auftrag für: <span class="text-indigo-400 font-semibold">BEMER Group</span>
+                </p>
 
                 <p class="text-gray-300 leading-relaxed mb-6">
-                    Ein moderner Musikplayer für Handballspiele mit nahtloser Spotify-Integration.
-                    Der Player ermöglicht das Abspielen von speziell kuratierten Spiel-Playlists,
-                    automatisches Wechseln von Tracks, Favoritenverwaltung und eine
-                    besonders schnelle Bedienung für Zeitdruck-Situationen am Kampfgericht.
+                    Die BEMER Group ist Hersteller zertifizierter Medizinprodukte und arbeitet weltweit daran,
+                    die Lebensqualität ihrer Kund:innen zu verbessern. Mit einem starken Vertriebsnetzwerk
+                    und persönlicher Betreuung stellt das Unternehmen sicher, dass Kunden bestmöglich beraten werden.
+                    <br><br>
+                    Im Rahmen dieses Projekts habe ich sowohl im <span
+                        class="text-indigo-400 font-semibold">Backend</span> als auch im <span
+                        class="text-indigo-400 font-semibold">Frontend</span> mitgewirkt:
+                    <br>
+                    • Backend mit <span class="text-indigo-400 font-semibold">Java / Spring Boot</span>: Implementierung
+                    von API-Endpunkten, Datenmodellierung und serverseitiger Logik.
+                    • Frontend mit <span class="text-indigo-400 font-semibold">React</span>: Gestaltung und Umsetzung
+                    der Benutzeroberfläche, interaktive Komponenten und Zustandshandling.
+                    <br><br>
+                    Ziel war eine moderne, performante und wartbare Website, die sowohl den Ansprüchen an Sicherheit und
+                    Stabilität im Backend gerecht wird als auch im Frontend ein ansprechendes Nutzererlebnis bietet.
                 </p>
 
                 <!-- Tech Icons -->
                 <div class="flex flex-wrap gap-6 mb-6">
+
+                    <!-- Java / Spring Boot -->
                     <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                            class="w-6 h-6">
-                        <span class="text-gray-300 text-sm">Java</span>
+                            class="w-6 h-6" alt="Java">
+                        <span class="text-gray-300 text-sm">Java / Spring Boot (BE)</span>
                     </div>
 
+                    <!-- React -->
                     <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-                            class="w-6 h-6">
-                        <span class="text-gray-300 text-sm">Spring Boot</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            class="w-6 h-6" alt="React">
+                        <span class="text-gray-300 text-sm">React (FE)</span>
                     </div>
 
+                    <!-- Docker (falls genutzt) -->
                     <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-                            class="w-6 h-6">
+                            class="w-6 h-6" alt="Docker">
                         <span class="text-gray-300 text-sm">Docker</span>
                     </div>
 
-                    <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            class="w-6 h-6">
-                        <span class="text-gray-300 text-sm">HTML/CSS/JS</span>
-                    </div>
-                </div>
-
-                <a href="https://my-spotify-musicplayer.onrender.com" target="_blank"
-                    class="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full font-semibold transition shadow-lg hover:scale-105">
-                    🎵 Live ansehen
-                </a>
-
-                <p class="text-sm text-gray-500 mt-2">
-                    Login: <span class="font-mono text-gray-400">jeff / 123456</span>
-                </p>
-            </div>
-
-
-            <!-- Handball Analytics Dashboard -->
-            <div
-                class="project-card bg-slate-700/50 rounded-2xl shadow-2xl p-10 border border-slate-600/50 hover:shadow-indigo-500/20 transition">
-
-                <h3 class="text-3xl font-bold mb-4 text-white">🤾 Handball Analytics Dashboard</h3>
-
-                <p class="text-gray-300 leading-relaxed mb-6">
-                    Ein interaktives Dashboard zur Analyse von Handballspielen.
-                    Coaches können Spielverläufe, Spielerleistungen, Shot-Charts,
-                    Heatmaps und Teamstatistiken in Echtzeit visualisieren.
-                    Ideal zur Trainingsplanung und Spielvorbereitung.
-                </p>
-
-                <!-- Tech Icons -->
-                <div class="flex flex-wrap gap-6 mb-6">
-                    <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                            class="w-6 h-6">
-                        <span class="text-gray-300 text-sm">Python</span>
-                    </div>
-
-                    <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
-                        <img src="https://streamlit.io/images/brand/streamlit-mark-color.png" class="w-6 h-6">
-                        <span class="text-gray-300 text-sm">Streamlit</span>
-                    </div>
-
-                    <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
-                            class="w-6 h-6">
-                        <span class="text-gray-300 text-sm">Pandas</span>
-                    </div>
-
-                    <div class="flex items-center gap-2 bg-slate-800 px-3 py-2 rounded-lg">
-                        <img src="https://matplotlib.org/stable/_static/logo2.svg" class="w-6 h-6">
-                        <span class="text-gray-300 text-sm">Matplotlib</span>
-                    </div>
-                </div>
-
-                <div class="flex gap-4">
-                    <a href="https://gibgambo-handball-data-analyzer-srcdashboard-8jj3yi.streamlit.app/" target="_blank"
-                        class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition shadow-lg hover:scale-105">
-                        📊 Demo ansehen
-                    </a>
-
-                    <a href="https://github.com/gibgambo/handball-data-analyzer" target="_blank"
-                        class="inline-block px-6 py-3 bg-slate-600 hover:bg-slate-700 text-white rounded-full font-semibold transition shadow-lg">
-                        💻 Code ansehen
-                    </a>
                 </div>
             </div>
 
         </div>
     </section>
+
+
 
     <section id="skills" class="py-24 bg-slate-900 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-6">
@@ -789,7 +1066,7 @@
                     <p class="text-gray-400 text-sm">PDF herunterladen</p>
                 </a>
 
-                 <a href="./static/documents/Zeugnis.pdf" download
+                <a href="./static/documents/Zeugnis.pdf" download
                     class="p-6 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-indigo-500 hover:bg-slate-800 transition shadow-lg block">
                     <div class="text-3xl mb-3 text-indigo-400">📄</div>
                     <h3 class="text-lg font-semibold text-white">Schulzeugnis</h3>
