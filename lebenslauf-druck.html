@@ -46,9 +46,11 @@
         /* ── A4 Page ─────────────────────────────────────────────── */
         .page {
             width: 210mm;
+            min-height: 594mm;
             background: white;
             margin: 20px auto;
             display: flex;
+            align-items: stretch;
             box-shadow: 0 4px 24px rgba(0,0,0,0.18);
         }
 
@@ -67,10 +69,11 @@
         }
 
         .photo-wrap img {
-            width: 96px;
-            height: 96px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
+            object-position: center center;
             border: 3px solid #6366f1;
         }
 
@@ -94,6 +97,8 @@
 
         .sb-section {
             margin-bottom: 18px;
+            break-inside: avoid;
+            page-break-inside: avoid;
         }
 
         .sb-section h2 {
@@ -156,7 +161,7 @@
         /* ── Main Content ────────────────────────────────────────── */
         .main {
             flex: 1;
-            padding: 28px 22px;
+            padding: 28px 22px 60px;
         }
 
         .section {
@@ -280,7 +285,7 @@
         <div class="sidebar">
 
             <div class="photo-wrap">
-                <img src="static/img/bewerbungsfoto.jpg" alt="Jeffrey Plückhahn">
+                <img src="static/img/bewerbungsfoto2.jpg" alt="Jeffrey Plückhahn">
             </div>
 
             <div class="name-block">
@@ -316,10 +321,6 @@
                     <span class="contact-icon">✉</span>
                     <span>jeff.plueckhahn@gmail.com</span>
                 </div>
-                <div class="contact-item">
-                    <span class="contact-icon">💻</span>
-                    <span>github.com/gibgambo</span>
-                </div>
             </div>
 
             <!-- Programmiersprachen -->
@@ -334,6 +335,8 @@
                     <div class="skill-tag">Kotlin</div>
                     <div class="skill-tag">Clojure</div>
                     <div class="skill-tag">C / C++ / C#</div>
+                    <div class="skill-tag">SQL</div>
+                    <div class="skill-tag">Bash / Shell</div>
                 </div>
             </div>
 
@@ -355,6 +358,13 @@
                     <div class="skill-tag">Spring Boot</div>
                     <div class="skill-tag">Flask</div>
                     <div class="skill-tag">.NET</div>
+                    <div class="skill-tag">Strapi</div>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-group-label">Integrationen & Services</div>
+                    <div class="skill-tag">Stripe</div>
+                    <div class="skill-tag">Spotify API</div>
+                    <div class="skill-tag">SAP Emarsys</div>
                 </div>
                 <div class="skill-group">
                     <div class="skill-group-label">Cloud & DevOps</div>
@@ -364,7 +374,9 @@
                     <div class="skill-tag">GCP</div>
                     <div class="skill-tag">Azure</div>
                     <div class="skill-tag">Argo CD</div>
-                    <div class="skill-tag">GitLab / GitHub</div>
+                    <div class="skill-tag">GitLab</div>
+                    <div class="skill-tag">GitHub</div>
+                    <div class="skill-tag">Bitbucket</div>
                 </div>
                 <div class="skill-group">
                     <div class="skill-group-label">Datenbanken</div>
@@ -373,10 +385,17 @@
                     <div class="skill-tag">MongoDB</div>
                     <div class="skill-tag">SQLite</div>
                 </div>
+                <div class="skill-group">
+                    <div class="skill-group-label">Betriebssysteme & Umgebungen</div>
+                    <div class="skill-tag">Linux (Ubuntu/Debian)</div>
+                    <div class="skill-tag">WSL</div>
+                    <div class="skill-tag">Windows</div>
+                    <div class="skill-tag">macOS</div>
+                </div>
             </div>
 
             <!-- Methodik -->
-            <div class="sb-section">
+            <div class="sb-section" style="padding-top: 10mm;">
                 <h2>Methodik & Prozesse</h2>
                 <div class="skill-group">
                     <div class="skill-tag">Scrum</div>
@@ -396,6 +415,11 @@
                     <div class="skill-tag">Postman</div>
                     <div class="skill-tag">IntelliJ</div>
                     <div class="skill-tag">VS Code</div>
+                    <div class="skill-tag">DataGrip</div>
+                    <div class="skill-tag">Excalidraw</div>
+                    <div class="skill-tag">Claude Code</div>
+                    <div class="skill-tag">GitHub Copilot</div>
+                    <div class="skill-tag">OpenAI Codex</div>
                 </div>
             </div>
 
@@ -546,14 +570,14 @@
 
             <!-- Projekte -->
             <div class="section">
-                <h2>Ausgewählte Projekte</h2>
+                <h2>Projekterfahrung</h2>
 
                 <div class="entry">
                     <div class="entry-header">
                         <span class="entry-title">Plastics.ai</span>
                         <span class="entry-date">Bergwerk.io</span>
                     </div>
-                    <p class="entry-desc">KI-Chatbot für die Kunststoffindustrie. Verantwortlich für Backend: Datenverarbeitung, API-Design, Authentifizierung, Abonnementsystem & Dokument-Chunking.</p>
+                    <p class="entry-desc">KI-gestützter Chatbot für die Kunststoffindustrie auf Basis der Hanser-Fachliteratur. Full-Stack-Entwicklung: Backend (Datenverarbeitung, API-Design, Authentifizierung, Abonnementsystem, Dokument-Chunking) sowie Frontend (UI/UX, Chatlogik, Darstellung der KI-Ergebnisse).</p>
                     <div class="proj-tags">
                         <span class="proj-tag">Elixir / Phoenix</span>
                         <span class="proj-tag">React</span>
@@ -565,6 +589,22 @@
                 <hr class="divider">
 
                 <div class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Qualitymanagement.ai</span>
+                        <span class="entry-date">Bergwerk.io</span>
+                    </div>
+                    <p class="entry-desc">KI-gestützter Chatbot für das Qualitätsmanagement – konzeptionell und technisch analog zu Plastics.ai, mit spezifischer Ausrichtung auf QM-Fachinhalte und -Prozesse. Full-Stack-Entwicklung: Backend (API-Design, Datenaufbereitung, Authentifizierung) sowie Frontend (Chatoberfläche, UX-Optimierung).</p>
+                    <div class="proj-tags">
+                        <span class="proj-tag">Elixir / Phoenix</span>
+                        <span class="proj-tag">React</span>
+                        <span class="proj-tag">PostgreSQL</span>
+                        <span class="proj-tag">Docker</span>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="entry" style="padding-top: 10mm;">
                     <div class="entry-header">
                         <span class="entry-title">ZEIT Online – E-Pub Konverter</span>
                         <span class="entry-date">Bergwerk.io</span>
@@ -601,12 +641,29 @@
                         <span class="entry-title">Handball Analytics Dashboard</span>
                         <span class="entry-date">Privat</span>
                     </div>
-                    <p class="entry-desc">Interaktives Dashboard zur Auswertung von Ligaspielen: Web-Scraping, PDF-Parsing, Statistikanalyse & Visualisierung.</p>
+                    <p class="entry-desc">Interaktives Dashboard zur Auswertung von Ligaspielen: Web-Scraping, PDF-Parsing, Statistikanalyse & Visualisierung mit Heatmaps und Diagrammen.</p>
                     <div class="proj-tags">
                         <span class="proj-tag">Python</span>
                         <span class="proj-tag">Streamlit</span>
                         <span class="proj-tag">Pandas</span>
                         <span class="proj-tag">Matplotlib</span>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Handball DJ Webplayer</span>
+                        <span class="entry-date">Privat</span>
+                    </div>
+                    <p class="entry-desc">Webplayer für situationsabhängige Spielmusik (Einlauf, Tor, Siebenmeter) auf dem Spielfeld – integriert die Spotify API für nahtloses Abspielen. Gehostet auf render.com.</p>
+                    <div class="proj-tags">
+                        <span class="proj-tag">Java</span>
+                        <span class="proj-tag">Spring Boot</span>
+                        <span class="proj-tag">Spotify API</span>
+                        <span class="proj-tag">HTML / CSS / JS</span>
+                        <span class="proj-tag">Docker</span>
                     </div>
                 </div>
             </div>
